@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:cardElevation="@dimen/cardview_elevation"
+    app:cardCornerRadius="@dimen/cardview_cornerRadius"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/custom_car_imageView"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/alpatchino" />
+
+        <TextView
+            android:paddingLeft="12dp"
+            android:id="@+id/custom_car_tv_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:layout_marginTop="32dp"
+            android:text="TextView"
+            android:textColor="#f254"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom_car_imageView" />
+
+
+        <TextView
+            android:id="@+id/custom_car_tv_color"
+            android:textColor="#f254"
+android:drawableLeft="@drawable/ic_palette"
+            android:drawablePadding="12dp"
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+             android:textSize="18sp"
+
+              app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom_car_tv_model" />
+
+
+        <TextView
+            android:drawablePadding="12dp"
+            android:drawableLeft="@drawable/ic_local_gas_station_black_24dp"
+            android:id="@+id/custom_car_tv_dpl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textColor="#f254"
+            android:textSize="18sp"
+             app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintStart_toEndOf="@id/custom_car_tv_color"
+             app:layout_constraintTop_toBottomOf="@+id/custom_car_tv_model" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
